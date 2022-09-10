@@ -1,1 +1,4 @@
 Ejercicio 6
+vim index.html  #creamos archivo html y lo modificamos 
+docker run --name "Contenedo" -d -p 90:80 nginx #corremos el contenedor y elegimos nombre y el puerto
+docker cp index.html "id":/usr/share/nginx/html 

@@ -1,0 +1,6 @@
+vim Dockerfile
+FROM bitnami/apache
+COPY index.html /usr/share/nginx/html
+docker build -t bitnami/apache-dockerfile:v1
+docker run -d -p 80:80 bitnami/apache-dockerfile:v1
+

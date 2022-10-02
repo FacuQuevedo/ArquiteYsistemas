@@ -1,3 +1,8 @@
 Ejercicio 1
-
+vim Dockerfile
+FROM nginx 
+COPY index.html /usr/share/nginx/html (aca estamos diciendo que nos copie nuestro archivo index.html (en caso de ser necesario indicar la ruta del archivo)
+docker build -t nginx-dockerfile:v1
+docker run -d -p 80:80 nginx-dockerfile:v1
 # 
+

@@ -1,2 +1,2 @@
-docker-compose -f "a.yml" -f "b.yml" up -d 
-docker-compose down # Se estopean todos 
+docker-compose -f "compose1.yml" -f "compose2.yml" up -d 
+docker-compose -f "nombre.yml" down

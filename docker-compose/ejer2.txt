@@ -1,0 +1,19 @@
+# a)Misma carpeta
+version:’3’
+    services:
+        web:
+            container_name: nginx-container
+            image: nginx
+            build: .
+
+# b)Diferente carpeta
+
+    version:’3’
+    services:
+        web:
+            container_name: nginx
+            image: nginx
+            build: 
+                context: directorioDelDockerfile
+                dockerfile: nombreDockerfile
+

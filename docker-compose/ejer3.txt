@@ -1,0 +1,2 @@
+docker-compose -f "a.yml" -f "b.yml" up -d 
+docker-compose down # Se estopean todos 

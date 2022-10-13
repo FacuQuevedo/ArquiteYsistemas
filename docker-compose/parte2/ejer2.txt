@@ -1,0 +1,29 @@
+Ejercicio 2:
+services:
+	web-1:
+		container_name: nginx-container
+		images: nginx
+		networks:
+			- site1
+		ports:
+			- "90:80"
+networks:
+	site1:
+		external:
+			name: pepe
+
+Definir una network y no asociarla al servicio. 
+
+version: "3"
+services:
+	web-1:
+		container_name: nginx-container
+		images: nginx
+		volumes:
+			- "volumes-container:/usr/share/nginx/html"
+		ports:
+			- "80:80"
+
+volumes:
+	volumes-container:
+

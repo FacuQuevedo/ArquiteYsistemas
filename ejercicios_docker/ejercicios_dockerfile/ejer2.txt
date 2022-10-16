@@ -1,4 +1,3 @@
-Ejercicio 1
 vim Dockerfile
 FROM nginx 
 WORKDIR /usr/share/nginx/html
@@ -6,5 +5,9 @@ COPY index.html /usr/share/nginx/html
 docker build -t facu-nginx:v1
 docker run -d -p 91:80 facu-nginx:v1
 
-# 
+vim index.html (editamos el index ejem <h1> hola <h1>)
+
+docker build -t facu-nginx:v2
+
+
 
